@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse AuraCare Hospital's medical galleries, showcasing our state-of-the-art ICU wards, advanced MRI diagnostics labs, and surgical rooms.">
+  <meta name="keywords" content="hospital gallery, medical equipment, ICU facilities, MRI diagnostics, surgical clinic photo">
+  <meta name="author" content="Student Name">
+  <title>Gallery | AuraCare Hospital & Diagnostics</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="headerLogo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span class="logo-text">Aura<span>Care</span></span>
+      </a>
+      
+      <nav class="nav-links" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services & Doctors</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact & Booking</a>
+      </nav>
+      
+      <div class="hamburger" id="navHamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: var(--header-height);">
+    <!-- GALLERY OVERVIEW -->
+    <section class="section fade-up-element appear" id="gallerySection">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary">Media Library</span>
+          <h1>AuraCare Medical Gallery</h1>
+          <p>Take a virtual tour of our modern medical facilities, advanced diagnostic systems, and our specialized medical team.</p>
+        </div>
+
+        <!-- Filter controls -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Media</button>
+          <button class="filter-btn" data-filter="doctors">Doctors</button>
+          <button class="filter-btn" data-filter="facilities">Facilities</button>
+          <button class="filter-btn" data-filter="equipment">Equipment</button>
+        </div>
+
+        <!-- Gallery Items Grid -->
+        <div class="grid gallery-grid">
+          <!-- Item 1: Facilities -->
+          <div class="gallery-item" data-category="facilities" data-title="Main Hospital Campus" data-description="Our ultra-modern clinical campus designed for green energy and smart flow.">
+            <img src="images/hero_hospital.png" alt="Exterior facade of AuraCare Hospital" width="400" height="280">
+            <div class="gallery-item-overlay">
+              <h3>Main Hospital Campus</h3>
+              <p>Facilities</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Doctors -->
+          <div class="gallery-item" data-category="doctors" data-title="Medical Specialists Team" data-description="Consultants from global institutes standing together in the main lobby.">
+            <img src="images/doctors_team.png" alt="A group of doctors smiling" width="400" height="280">
+            <div class="gallery-item-overlay">
+              <h3>Medical Specialists Team</h3>
+              <p>Doctors</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Equipment -->
+          <div class="gallery-item" data-category="equipment" data-title="Advanced MRI Scanner" data-description="High-field magnetic resonance scanner offering precise neural and soft-tissue imaging.">
+            <img src="images/mri_machine.png" alt="MRI scan suite inside the diagnostics unit" width="400" height="280">
+            <div class="gallery-item-overlay">
+              <h3>Advanced MRI Scanner</h3>
+              <p>Equipment</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Facilities -->
+          <div class="gallery-item" data-category="facilities" data-title="Patient Consultation Room" data-description="Spacious, sterile outpatient chambers providing safety and confidentiality.">
+            <img src="images/patient_care.png" alt="Modern clinic consulting suite" width="400" height="280">
+            <div class="gallery-item-overlay">
+              <h3>Patient Consultation Room</h3>
+              <p>Facilities</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Equipment / Laboratory -->
+          <div class="gallery-item" data-category="equipment" data-title="High-Tech Diagnostic Suite" data-description="Advanced analysis equipment ensuring fast, laboratory-verified results.">
+            <img src="images/mri_machine.png" alt="Diagnostics laboratory equipment" width="400" height="280">
+            <div class="gallery-item-overlay">
+              <h3>High-Tech Diagnostic Suite</h3>
+              <p>Equipment</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Doctors / Care -->
+          <div class="gallery-item" data-category="doctors" data-title="Patient Care Consultation" data-description="Specialists providing dedicated clinical counseling and medical checkups.">
+            <img src="images/patient_care.png" alt="Doctor examining patient with stethoscope" width="400" height="280">
+            <div class="gallery-item-overlay">
+              <h3>Patient Care Consultation</h3>
+              <p>Doctors</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL OVERLAY -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-close">&times;</div>
+    <div class="lightbox-arrow lightbox-arrow-left">&#10094;</div>
+    
+    <div class="lightbox-content-wrapper">
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption">
+        <h3 class="lightbox-title">Image Title</h3>
+        <p class="lightbox-desc">Image Description</p>
+      </div>
+    </div>
+    
+    <div class="lightbox-arrow lightbox-arrow-right">&#10095;</div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span class="logo-text">Aura<span>Care</span></span>
+        </a>
+        <p>Providing premium health solutions and high-level medical treatment options globally since 2012.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services & Doctors</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact & Booking</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Specialties</h4>
+        <div class="footer-links">
+          <a href="services.html">Cardiology</a>
+          <a href="services.html">Neurology</a>
+          <a href="services.html">Pediatric Care</a>
+          <a href="services.html">Emergency Room</a>
+          <a href="services.html">Diagnostic Labs</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Stay Updated</h4>
+        <div class="footer-newsletter">
+          <p>Subscribe to our wellness newsletter for direct health tips and medical updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+            <input type="email" placeholder="Your email address" required aria-label="Email Address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 AuraCare Hospital. All Rights Reserved. Built for MANTRA 2026 Assignment.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Patient Rights</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
