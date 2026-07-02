@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet AuraCare Hospital's world-class medical specialists, search for doctors, and discover our specialized medical departments.">
+  <meta name="keywords" content="medical services, AuraCare doctors, cardiology specialists, neurology experts, pediatric clinic, orthopedics">
+  <meta name="author" content="AuraCare Hospital">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d9488">
+  <link rel="canonical" href="https://auracarehospital.com/services.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230d9488'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>" type="image/svg+xml">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Services & Doctors | AuraCare Hospital">
+  <meta property="og:description" content="Explore clinical specialties and consult expert doctors in Cardiology, Neurology, Pediatrics, and Orthopedics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://auracarehospital.com/services.html">
+  <meta property="og:image" content="https://auracarehospital.com/images/hero_hospital.png">
+  <meta property="og:site_name" content="AuraCare Hospital">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services & Doctors | AuraCare Hospital">
+  <meta name="twitter:description" content="Consult top medical specialists at AuraCare Hospital.">
+  <meta name="twitter:image" content="https://auracarehospital.com/images/hero_hospital.png">
+
+  <!-- Performance Optimization Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Services & Doctors | AuraCare Hospital</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "AuraCare Hospital Medical Services",
+    "url": "https://auracarehospital.com/services.html",
+    "description": "Comprehensive clinical diagnosis, surgery, and doctor consultations across Cardiology, Neurology, Pediatrics, and Orthopedics.",
+    "medicalSpecialty": [
+      "Cardiovascular",
+      "Neurology",
+      "Pediatric",
+      "Orthopedic"
+    ]
+  }
+  </script>
+  
+  <style>
+    /* Service Card Specific Styles */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 5rem;
+    }
+    
+    .service-detail-card {
+      background-color: var(--neutral-white);
+      border-radius: var(--radius-md);
+      padding: 3rem 2.5rem;
+      box-shadow: var(--shadow-md);
+      border-top: 5px solid var(--primary);
+      transition: var(--transition);
+    }
+    
+    .service-detail-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .service-detail-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .service-list {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    
+    .service-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.95rem;
+      color: var(--secondary-light);
+    }
+    
+    .service-list li svg {
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    
+    /* Doctor Card Avatar Graphics */
+    .doc-avatar-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--primary-light) 0%, #e0f2f1 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 3.5rem;
+      font-family: var(--font-headings);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="headerLogo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span class="logo-text">Aura<span>Care</span></span>
+      </a>
+      
+      <nav class="nav-links" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html" class="active">Services & Doctors</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact & Booking</a>
+      </nav>
+      
+      <div class="hamburger" id="navHamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: var(--header-height);">
+    <!-- SERVICES OVERVIEW -->
+    <section class="section fade-up-element appear" id="servicesSection">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary">Clinical Excellence</span>
+          <h1>Our Departments & Specialties</h1>
+          <p>Explore our wide range of medical fields offering diagnosis, therapy, surgeries, and comprehensive recovery care.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Department 1 -->
+          <div class="service-detail-card">
+            <h3>Cardiovascular Sciences</h3>
+            <p>Advanced diagnostic facilities, hybrid surgical suites, and preventative therapies for complex heart disorders.</p>
+            <ul class="service-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Coronary Angioplasty & Stenting
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Heart Failure Management
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Pacemaker Implantation
+              </li>
+            </ul>
+          </div>
+
+          <!-- Department 2 -->
+          <div class="service-detail-card" style="border-top-color: var(--secondary);">
+            <h3>Neurological Care</h3>
+            <p>Highly qualified brain and spinal surgeons utilizing modern computer-guided technology for neural pathology.</p>
+            <ul class="service-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Neurosurgery & Spine Repair
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Epilepsy & Stroke Treatment
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Neuropathy Pain Relief
+              </li>
+            </ul>
+          </div>
+
+          <!-- Department 3 -->
+          <div class="service-detail-card" style="border-top-color: var(--accent);">
+            <h3>Orthopedics & Joint Care</h3>
+            <p>Comprehensive orthopedic care, sports medicine, joint replacements, and high-quality post-op physical rehabilitation.</p>
+            <ul class="service-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Total Knee & Hip Replacements
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Arthroscopic Sports Surgery
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Fracture & Trauma Repair
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTOR DIRECTORY SECTION -->
+    <section class="section section-bg fade-up-element" id="doctorsSection">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary">Specialists Directory</span>
+          <h2>Consult Our Medical Experts</h2>
+          <p>Find the right physician, check credentials, or search directly by specialty/department.</p>
+        </div>
+
+        <!-- Dynamic Search and Filters -->
+        <div class="search-wrapper">
+          <div class="search-input-container">
+            <input type="text" id="doctorSearch" placeholder="Search doctor by name, specialty, or department..." aria-label="Search Doctor">
+            <button type="button" aria-label="Search Submit">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-dept="all">All Specialties</button>
+          <button class="filter-btn" data-dept="cardiology">Cardiology</button>
+          <button class="filter-btn" data-dept="neurology">Neurology</button>
+          <button class="filter-btn" data-dept="pediatrics">Pediatrics</button>
+          <button class="filter-btn" data-dept="orthopedics">Orthopedics</button>
+        </div>
+
+        <!-- Doctor Cards Grid -->
+        <div class="grid doctors-grid" id="doctorsGrid">
+          <!-- Doctor 1: Cardiology -->
+          <div class="doctor-card" data-category="cardiology">
+            <div class="doctor-image">
+              <div class="doc-avatar-placeholder">EC</div>
+              <div class="doctor-overlay">
+                <a href="#" class="doctor-social" aria-label="Profile Link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <span class="doc-dept">Cardiology</span>
+              <h3>Dr. Evelyn Carter</h3>
+              <p>MD, FACC - Senior Consultant Cardiologist with 15+ years of clinical experience in coronary intervention.</p>
+              <div class="doctor-meta">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color: var(--primary);"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zM12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  Mon - Fri
+                </span>
+                <span>Room 302</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 2: Neurology -->
+          <div class="doctor-card" data-category="neurology">
+            <div class="doctor-image">
+              <div class="doc-avatar-placeholder">MV</div>
+              <div class="doctor-overlay">
+                <a href="#" class="doctor-social" aria-label="Profile Link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <span class="doc-dept">Neurology</span>
+              <h3>Dr. Marcus Vance</h3>
+              <p>MD, PhD - Neurosurgeon specializing in complex spine repair and computer-guided brain tumor removal.</p>
+              <div class="doctor-meta">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color: var(--primary);"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zM12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  Mon, Wed, Fri
+                </span>
+                <span>Room 405</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 3: Pediatrics -->
+          <div class="doctor-card" data-category="pediatrics">
+            <div class="doctor-image">
+              <div class="doc-avatar-placeholder">AP</div>
+              <div class="doctor-overlay">
+                <a href="#" class="doctor-social" aria-label="Profile Link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <span class="doc-dept">Pediatrics</span>
+              <h3>Dr. Aaliyah Patel</h3>
+              <p>MD (Pediatrics) - Dedicated pediatrician focused on childhood growth monitoring, vaccinations, and chronic care.</p>
+              <div class="doctor-meta">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color: var(--primary);"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zM12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  Tue - Sat
+                </span>
+                <span>Room 101</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 4: Orthopedics -->
+          <div class="doctor-card" data-category="orthopedics">
+            <div class="doctor-image">
+              <div class="doc-avatar-placeholder">RC</div>
+              <div class="doctor-overlay">
+                <a href="#" class="doctor-social" aria-label="Profile Link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <span class="doc-dept">Orthopedics</span>
+              <h3>Dr. Robert Chen</h3>
+              <p>MS (Ortho) - Consultant Orthopedic Surgeon with expert focus on total joint replacement and arthroscopic repairs.</p>
+              <div class="doctor-meta">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color: var(--primary);"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zM12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  Mon - Thu
+                </span>
+                <span>Room 214</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span class="logo-text">Aura<span>Care</span></span>
+        </a>
+        <p>Providing premium health solutions and high-level medical treatment options globally since 2012.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services & Doctors</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact & Booking</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Specialties</h4>
+        <div class="footer-links">
+          <a href="services.html">Cardiology</a>
+          <a href="services.html">Neurology</a>
+          <a href="services.html">Pediatric Care</a>
+          <a href="services.html">Emergency Room</a>
+          <a href="services.html">Diagnostic Labs</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Stay Updated</h4>
+        <div class="footer-newsletter">
+          <p>Subscribe to our wellness newsletter for direct health tips and medical updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+            <input type="email" placeholder="Your email address" required aria-label="Email Address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 AuraCare Hospital. All Rights Reserved. Built for MANTRA 2026 Assignment.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Patient Rights</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+  
+  <!-- Interactive Search and Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('doctorSearch');
+      const deptButtons = document.querySelectorAll('.filter-bar .filter-btn');
+      const doctorCards = document.querySelectorAll('#doctorsGrid .doctor-card');
+      
+      let activeDept = 'all';
+      let searchQuery = '';
+
+      function filterDoctors() {
+        doctorCards.forEach(card => {
+          const cardDept = card.getAttribute('data-category');
+          const docName = card.querySelector('h3').textContent.toLowerCase();
+          const docInfo = card.querySelector('p').textContent.toLowerCase();
+          
+          const matchesDept = (activeDept === 'all' || cardDept === activeDept);
+          const matchesSearch = (docName.includes(searchQuery) || docInfo.includes(searchQuery) || cardDept.includes(searchQuery));
+          
+          if (matchesDept && matchesSearch) {
+            card.style.display = 'block';
+            card.style.opacity = '1';
+          } else {
+            card.style.display = 'none';
+            card.style.opacity = '0';
+          }
+        });
+      }
+
+      // Department Filter Clicks
+      deptButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          deptButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeDept = btn.getAttribute('data-dept');
+          filterDoctors();
+        });
+      });
+
+      // Search Input typing
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        filterDoctors();
+      });
+    });
+  </script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6a466ce84b956a1d4cbbbfac/1jshhirvv';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>
